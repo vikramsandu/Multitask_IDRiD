@@ -1,0 +1,39 @@
+{
+  "exp_description": "Vanilla Multi Task Model with i) Resnet34 Backbone ii) Dynamic Routing disabled iii) No Data Augmentation",
+  "exp_path": "runs/multi_task/cnn/vanilla",
+
+  "model": {
+    "encoder_name": "efficientnet-b0",
+    "num_class_labels": 5,
+    "num_segmentation_classes": 5,
+    "pretrained": "imagenet",
+    "dropout": 0.2,
+    "isClassify": true,
+    "isSegment": true
+  },
+  "training": {
+    "batch_size": 8,
+    "num_epochs": 50,
+    "learning_rate": 1e-3,
+    "device": "cuda",
+    "lambda_class": 0.25,
+    "early_stopping_patience": 20
+  },
+  "dataset": {
+    "train_disease_img": "dataset/Disease_Grading/original_images/Train",
+    "train_disease_csv": "dataset/Disease_Grading/ground_truths/disease_grading_train.csv",
+    "train_seg_img": "dataset/Segmentation/original_images/Train",
+    "train_seg_mask": "dataset/Segmentation/ground_truths/Train",
+
+    "test_disease_img": "dataset/Disease_Grading/original_images/Test",
+    "test_disease_csv": "dataset/Disease_Grading/ground_truths/disease_grading_test.csv",
+    "test_seg_img": "dataset/Segmentation/original_images/Test",
+    "test_seg_mask": "dataset/Segmentation/ground_truths/Test",
+
+    "resize_segmentation": 512,
+    "random_crop_segmentation": 256,
+    "resize_classification": 256,
+    "normalize": "imagenet",
+    "augmentation": true
+  }
+}
