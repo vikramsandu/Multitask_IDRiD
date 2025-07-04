@@ -1,7 +1,7 @@
 ## Goal
 In this project, we aim to build a modular deep learning system for multi-task learning that can simultaneously perform disease grading (multi-class classification) and lesion segmentation (binary or multi-label) from retinal images. The system should be capable of handling both single-task learning and multi-task learning scenarios.
 
-## Dataset
+## 📁 Dataset
 We utilize the Indian Diabetic Retinopathy Image Dataset (IDRiD), which can be downloaded [here](https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid). Make sure the dataset follows this structure.
 
 ```
@@ -31,6 +31,14 @@ dataset/
 │       ├── Train/
 │       └── Test/
 ```
+## 📊 Results
+
+| Model               | Classification Loss | Segmentation Loss | Accuracy (%) | Dice Score |
+|---------------------|---------------------|-------------------|--------------|------------|
+| Classification Only | **1.4005**          | 0.0000            | 60.19        | NA         |
+| Segmentation Only   | NA                  | 0.0261            | NA           | 0.6806     |
+| **Multitask**       | 1.5739              | **0.0178**        | **62.14**    | **0.7029** |
+
 
 
 
