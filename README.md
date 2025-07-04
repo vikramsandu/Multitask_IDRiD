@@ -37,6 +37,7 @@ To train and evaluate the model, run the following command with the appropriate 
 
 ```bash
 bash experiment.sh
+```
 
 ## 📊 Results
 
