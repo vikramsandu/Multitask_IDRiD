@@ -1,1 +1,1 @@
-This repository provides an implementation of a multi-task vision model that performs both disease grading classification and lesion segmentation on retinal images from the Indian Diabetic Retinopathy Image Dataset (IDRiD).
+
