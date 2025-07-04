@@ -1,10 +1,10 @@
 # Run this bash file to produce results shown in the report for all experiments.
 
 ## Training ##
- Exp-1: Disease Grading classification.
+# Exp-1: Disease Grading classification.
 python train.py  --config-path  configs/classification_only.json
 
- Exp-2: Lesion Segmentation
+# Exp-2: Lesion Segmentation
 python train.py --config-path  configs/segmentation_only.json
 
 # Exp-3: Multitask with loss_class + loss_seg.
