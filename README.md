@@ -31,6 +31,13 @@ dataset/
 │       ├── Train/
 │       └── Test/
 ```
+## 🚀 Train and Validate
+
+To train and evaluate the model, run the following command with the appropriate config path:
+
+```bash
+bash experiment.sh
+
 ## 📊 Results
 
 | Model               | Classification Loss | Segmentation Loss | Accuracy (%) | Dice Score |
